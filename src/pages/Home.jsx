@@ -37,8 +37,6 @@ export default function Home() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        
-        {/* LOGO */}
         <div
           onClick={() => scrollToSection("home")}
           className="flex items-center gap-2 cursor-pointer group"
@@ -51,7 +49,6 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* NAV LINKS */}
         <div className="flex items-center gap-8">
           <ul className="hidden md:flex gap-8 text-sm font-medium text-gray-400">
             {[
@@ -101,11 +98,11 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition transform duration-200 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+              <button onClick={() => scrollToSection("work")} className="px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition transform duration-200 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
                 View Work
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 hover:border-white text-white font-medium transition duration-200">
+              <button onClick={() => scrollToSection("contact")} className="px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 hover:border-white text-white font-medium transition duration-200">
                 Contact Me
               </button>
             </div>
@@ -265,27 +262,40 @@ export default function Home() {
         </section>
 
         <section id="pricing" className="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5">
-        <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Pricing
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto">
             Flexible packages designed for creators and brands at different stages.
-            </p>
+        </p>
+    </div>
+    <div className="mt-12 py-7 flex justify-center">
+        <div className="inline-flex items-center space-x-4 bg-white/5 px-6 py-3 rounded-full border border-white/10 hover:border-purple-500/50 transition-colors">
+            <span className="text-gray-300 text-sm md:text-base">
+                Just need one video?
+            </span>
+            <span className="h-4 w-px bg-white/20"></span>
+            <span className="text-white font-bold text-sm md:text-base">
+                ₹1500 / Single Reel
+            </span>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            {/* STARTER */}
-            <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-all duration-300">
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">Starter</h3>
             <p className="text-gray-400 mb-6 text-sm">
                 Perfect for trying out my editing style.
             </p>
 
-            <div className="text-4xl font-extrabold mb-6">
-                ₹4000
-                <span className="text-base font-medium text-gray-400"> / 3 REELS</span>
+            <div className="mb-6">
+                <div className="text-4xl font-extrabold">
+                    ₹4000
+                    <span className="text-base font-medium text-gray-400"> / 3 REELS</span>
+                </div>
+                <p className="text-sm text-purple-400 mt-2 font-medium">
+                    (≈ ₹1,333 per edit)
+                </p>
             </div>
 
             <ul className="space-y-3 text-sm text-gray-300 mb-8">
@@ -294,9 +304,9 @@ export default function Home() {
                 <li>• Basic transitions</li>
                 <li>• 2 revisions</li>
             </ul>
-            </div>
+        </div>
 
-            <div className="relative p-8 rounded-2xl bg-gradient-to-br from-purple-600/20 to-blue-600/20 border border-purple-500/40 scale-[1.02] shadow-[0_0_40px_rgba(168,85,247,0.2)]">
+        <div className="relative p-8 rounded-2xl bg-gradient-to-br from-purple-600/20 to-blue-600/20 border border-purple-500/40 scale-[1.02] shadow-[0_0_40px_rgba(168,85,247,0.2)]">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-purple-500 text-black text-xs font-bold rounded-full">
                 BEST SELLER
             </div>
@@ -306,9 +316,14 @@ export default function Home() {
                 Best for consistent content and growth.
             </p>
 
-            <div className="text-4xl font-extrabold mb-6">
-                ₹6500
-                <span className="text-base font-medium text-gray-300"> / 5 REELS</span>
+            <div className="mb-6">
+                <div className="text-4xl font-extrabold">
+                    ₹6500
+                    <span className="text-base font-medium text-gray-300"> / 5 REELS</span>
+                </div>
+                <p className="text-sm text-purple-300 mt-2 font-medium">
+                    (₹1,300 per edit)
+                </p>
             </div>
 
             <ul className="space-y-3 text-sm text-gray-200 mb-8">
@@ -317,30 +332,34 @@ export default function Home() {
                 <li>• Captions Included</li>
                 <li>• 3 revisions</li>
             </ul>
-            </div>
+        </div>
 
-            <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all duration-300">
+        <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">Growth</h3>
             <p className="text-gray-400 mb-6 text-sm">
                 For brands and high-volume creators.
             </p>
 
-            <div className="text-4xl font-extrabold mb-6">
-                ₹12000
-                <span className="text-base font-medium text-gray-300"> / 10 REELS</span>
+            <div className="mb-6">
+                <div className="text-4xl font-extrabold">
+                    ₹12000
+                    <span className="text-base font-medium text-gray-300"> / 10 REELS</span>
+                </div>
+                <p className="text-sm text-purple-400 mt-2 font-medium">
+                    (₹1,200 per edit)
+                </p>
             </div>
 
             <ul className="space-y-3 text-sm text-gray-300 mb-8">
                 <li>• Advanced Transitions</li>
                 <li>• Color Grading</li>
                 <li>• Captions + Effects</li>
-                <li>• Prioirty Dlivery</li>
+                <li>• Priority Delivery</li>
                 <li>• 5 revisions</li>
             </ul>
-            </div>
-            </div>
-        </section>
-
+        </div>
+    </div>
+      </section>
         <section id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Let’s Work Together
