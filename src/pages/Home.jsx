@@ -191,6 +191,29 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
+              href="https://drive.google.com/drive/folders/1Sg0K3_gUdi97HNqKiVVnbBGW4a6Xw-Ak?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative h-48 rounded-xl bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] border border-white/10 hover:border-blue-500/50 p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 p-5 opacity-50 group-hover:opacity-100 transition-opacity">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </div>
+              <div className="z-10">
+                <div className="w-10 h-10 bg-blue-600/20 rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-600/40 transition-colors">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                </div>
+                <h3 className="text-lg font-bold mb-1 text-white group-hover:text-blue-400 transition-colors">
+                  Full Portfolio
+                </h3>
+                <p className="text-gray-500 text-xs group-hover:text-gray-300 transition-colors">
+                  Google Drive (All Projects)
+                </p>
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+            </a>
+            
+            <a
               href="https://www.instagram.com/reel/DTDgtfXk1Nr/?igsh=cWxpd3FyOXBkejRo"
               target="_blank"
               rel="noopener noreferrer"
@@ -236,28 +259,6 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
 
-            <a
-              href="https://drive.google.com/drive/folders/1Sg0K3_gUdi97HNqKiVVnbBGW4a6Xw-Ak?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative h-48 rounded-xl bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] border border-white/10 hover:border-blue-500/50 p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 p-5 opacity-50 group-hover:opacity-100 transition-opacity">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </div>
-              <div className="z-10">
-                <div className="w-10 h-10 bg-blue-600/20 rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-600/40 transition-colors">
-                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                </div>
-                <h3 className="text-lg font-bold mb-1 text-white group-hover:text-blue-400 transition-colors">
-                  Full Portfolio
-                </h3>
-                <p className="text-gray-500 text-xs group-hover:text-gray-300 transition-colors">
-                  Google Drive (All Projects)
-                </p>
-              </div>
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-            </a>
           </div>
         </section>
 
@@ -277,7 +278,7 @@ export default function Home() {
             </span>
             <span className="h-4 w-px bg-white/20"></span>
             <span className="text-white font-bold text-sm md:text-base">
-                ₹1500 / Single Reel
+                ₹1800 / Single Reel
             </span>
         </div>
     </div>
@@ -290,11 +291,11 @@ export default function Home() {
 
             <div className="mb-6">
                 <div className="text-4xl font-extrabold">
-                    ₹4000
+                    ₹5400
                     <span className="text-base font-medium text-gray-400"> / 3 REELS</span>
                 </div>
                 <p className="text-sm text-purple-400 mt-2 font-medium">
-                    (≈ ₹1,333 per edit)
+                    (₹1,700 per edit)
                 </p>
             </div>
 
@@ -318,11 +319,11 @@ export default function Home() {
 
             <div className="mb-6">
                 <div className="text-4xl font-extrabold">
-                    ₹6500
+                    ₹8000
                     <span className="text-base font-medium text-gray-300"> / 5 REELS</span>
                 </div>
                 <p className="text-sm text-purple-300 mt-2 font-medium">
-                    (₹1,300 per edit)
+                    (₹1,600 per edit)
                 </p>
             </div>
 
@@ -342,11 +343,11 @@ export default function Home() {
 
             <div className="mb-6">
                 <div className="text-4xl font-extrabold">
-                    ₹12000
+                    ₹15000
                     <span className="text-base font-medium text-gray-300"> / 10 REELS</span>
                 </div>
                 <p className="text-sm text-purple-400 mt-2 font-medium">
-                    (₹1,200 per edit)
+                    (₹1,500 per edit)
                 </p>
             </div>
 
