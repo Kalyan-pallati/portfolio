@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import placeholder from "../assets/placeholder.jpeg";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Navbar from "../components/NavBar";
 
 export default function Home() {
     const [scrolled, setScrolled] = useState(false);
@@ -29,56 +30,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-10">
-        <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#050505]/80 backdrop-blur-md border-b border-white/5 py-4"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <div
-          onClick={() => scrollToSection("home")}
-          className="flex items-center gap-2 cursor-pointer group"
-        >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:shadow-purple-500/20 transition duration-300">
-            C
-          </div>
-          <h1 className="text-xl font-bold tracking-tight text-white group-hover:text-gray-200 transition">
-            ChaeDoesEdit
-          </h1>
-        </div>
-
-        <div className="flex items-center gap-8">
-          <ul className="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-            {[
-              { label: "Home", id: "home" },
-              { label: "About", id: "about" },
-              { label: "Work", id: "work" },
-              { label: "Contact", id: "contact" },
-            ].map((item) => (
-              <li
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="relative cursor-pointer hover:text-white transition-colors duration-200 group"
-              >
-                {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-              </li>
-            ))}
-          </ul>
-
-          {/* CTA */}
-          <button
-            onClick={() => scrollToSection("pricing")}
-            className="hidden md:block px-5 py-2.5 rounded-full bg-white text-black text-sm font-bold hover:bg-gray-200 transition-colors shadow-[0_0_15px_rgba(255,255,255,0.1)]"
-          >
-            Pricing
-          </button>
-        </div>
-      </div>
-    </nav>
-
+        <Navbar />
         <section id="home" className="max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-20 lg:pt-32 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm font-medium tracking-wide">
