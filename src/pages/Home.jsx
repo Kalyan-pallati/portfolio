@@ -237,7 +237,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.instagram.com/reel/DRxCyiWEkmF/?igsh=ajl4Mm1ic3Rwemxs"
+              href="https://www.instagram.com/reel/DUvXjQ2E5Vb/?igsh=bWV4cTl3ZG9maXR5"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative h-48 rounded-xl bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] border border-white/10 hover:border-purple-500/50 p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.15)] overflow-hidden"
