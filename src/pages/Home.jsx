@@ -135,7 +135,7 @@ export default function Home() {
                 A selection of my recent edits and full portfolio.
               </p>
             </div>
-            <a href="https://drive.google.com/drive/folders/1Sg0K3_gUdi97HNqKiVVnbBGW4a6Xw-Ak?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 font-medium flex items-center gap-2 group transition-colors text-sm">
+            <a href="https://drive.google.com/drive/folders/1-Ejiep9AhsggYfbatXX9sZ22s5niggz4?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 font-medium flex items-center gap-2 group transition-colors text-sm">
               View All Projects 
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </a>
