@@ -349,19 +349,6 @@ export default function Home() {
                     Email
                 </span>
                 </a>
-                <a
-                href="https://wa.me/918074589862"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center gap-3"
-                >
-                <div className="w-16 h-16 rounded-full bg-green-600/20 flex items-center justify-center group-hover:bg-green-600/40 transition-all duration-300 group-hover:scale-110">
-                    <FaWhatsapp className="text-green-400 text-2xl" />
-                </div>
-                <span className="text-sm text-gray-300 group-hover:text-green-400 transition">
-                    WhatsApp
-                </span>
-                </a>
 
             </div>
             </section>
